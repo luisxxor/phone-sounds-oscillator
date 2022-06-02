@@ -1,0 +1,33 @@
+#phone-keyboard {
+  display: flex;
+  flex-direction: column;
+}
+
+#phone-keyboard > div {
+  display: flex;
+}
+
+.button {
+  margin: .3em;
+  padding: 1em;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  vertical-align: center;
+  font-family: 'roboto', sans-serif;
+  box-shadow: 8px 8px 24px 0px rgba(0,0,0,.5);
+  border-radius: 100%;
+  transition: .2s all;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+.button:active {
+  transform: translateY(1px);
+  -webkit-box-shadow: 5px 5px 24px 0px 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
