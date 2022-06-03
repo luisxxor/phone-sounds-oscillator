@@ -19,6 +19,7 @@
   border-radius: 100%;
   transition: .2s all;
   cursor: pointer;
+  user-select: none;
 }
 
 .button:hover {
@@ -27,7 +28,11 @@
 
 .button:active {
   transform: translateY(1px);
-  -webkit-box-shadow: 5px 5px 24px 0px 
+  box-shadow: 5px 5px 24px 0px 
+}
+
+.button > span {
+  user-select: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
